@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background: linear-gradient(rgb(62, 46, 92) 0%, rgb(34, 95, 95) 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background: linear-gradient(rgb(35, 76, 80) 0%, rgb(101, 137, 141) 100%);
+    height: 50vh;
+    width: 60vh;
+    border-radius: 20px;
+}
+
+#heading{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(38, 226, 38);
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+    position: relative;
+    top: 50px;
+    height: 7vh;
+    width: 50vw;
+    font-size: 1.1rem;
+    text-align :center;
+    background-color: transparent;
+    color: rgb(20, 31, 38);
+}
+
+#input::placeholder{
+    color: rgb(20, 31, 38);
+}
+
+#input:focus{
+    outline: none;
+}
+
+button{
+    position: relative;
+    top: 100px;
+    height: 5vh;
+    width: 20vw;
+    color: rgb(38, 226, 38);
+    background-color: black;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+}
+
+#text{
+    color: rgb(38, 226, 38);
+    position: relative;
+    top: 150px;
+    font-size: 1.6rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 425px){
+    #input{
+        font-size: 0.8rem
+    }
+
+    button{    
+        width: 30vw;
+    }
+}
+
+@media (max-width: 475px){
+    button{    
+        width: 30vw;
+    }
+}
+
+@media (max-width: 320px){
+    button{    
+        width: 30vw;
+    }
+}
